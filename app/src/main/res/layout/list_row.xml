@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/movie_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Deepak Sharma"
+            android:id="@+id/userName"
+            android:textColor="#222222"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/like"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Commit: XXXXXXXX"
+            android:id="@+id/commit_number"
+            android:layout_below="@id/like"
+            android:layout_width="match_parent"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/message"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/like"
+            android:layout_width="25dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/heart_on"
+            android:layout_marginTop="5dp"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:text="Message"
+            android:id="@+id/message"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/like"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:theme="@style/MyButton"
+            android:layout_height="36dp" />
+</RelativeLayout>
